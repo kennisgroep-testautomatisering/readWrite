@@ -1,0 +1,15 @@
+{
+  "name": "postmanreadwrite",
+  "version": "1.0.0",
+  "description": "read and write",
+  "main": "PostmanReadWrite.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kennisgroep-testautomatisering/readWrite.io.git"
+  }
+  "author": "Matthijs Risselada",
+  "license": "ISC"
+}
