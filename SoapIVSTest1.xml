@@ -207,6 +207,10 @@ if(!folder.exists()) {
 iniPath = iniPath+"data.ini"
 
 def iniFile = new File(iniPath)
+
+//First delete existing ini file
+iniFile.delete
+
 iniFile.createNewFile();
 
 ini = new Wini(new File(iniPath));
