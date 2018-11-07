@@ -215,7 +215,7 @@ ini = new Wini(new File(iniPath));
 
 ini.put("example","currency", currency)
 ini.put("example","date", dt)
-ini.put("POCdata","logfile",logDir + "logRWSPOC$dt2"+".log")
+ini.put("POCdata","logfile","logRWSPOC$dt2"+".log")
 ini.store()
 
 testRunner.cancel("Test1 is klaar")]]></script></con:config></con:testStep><con:testStep type="request" id="2f37b903-062b-4f02-832c-aa80a19be3ed" name="GetCurrencies"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ConverterSoap</con:interface><con:operation>GetCurrencies</con:operation><con:request name="GetCurrencies" id="0bc0f266-3b6e-4813-9316-422618c1688e"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://currencyconverter.kowabunga.net/converter.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
