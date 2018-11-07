@@ -134,8 +134,10 @@ currency = resultaatp.Body.GetCurrenciesResponse.GetCurrenciesResult.string[0].t
 groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
 projectPath = groovyUtils.projectPath
 
-logDir = "var/logs/"
-iniPath  = "var/ini/"
+log.info projectPath
+
+logDir = "/var/logs/"
+iniPath  = "/var/ini/"
 
 // Hier hebben we een resultaat en is het tijd om logging uit te gaan voeren
 def logFolder = new File(logDir)
