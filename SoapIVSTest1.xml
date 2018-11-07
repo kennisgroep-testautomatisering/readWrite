@@ -209,7 +209,7 @@ iniPath = iniPath+"data.ini"
 def iniFile = new File(iniPath)
 
 //First delete existing ini file
-iniFile.delete
+iniFile.delete()
 
 iniFile.createNewFile();
 
