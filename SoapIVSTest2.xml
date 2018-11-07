@@ -868,7 +868,10 @@ input_step = resultaat
 
 logFile = new File (logDir+logFile)
 
+logFile.append("\r\n")
+logFile.append(">>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<\r\n")
 logFile.append("Dit is het tweede gedeelte van de SoapUI log")
+logFile.append(">>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<\r\n")
 logFile.append("\r\n")
 logFile.append("\r\n")
 logFile.append(">>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<\r\n")
