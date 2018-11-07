@@ -836,7 +836,7 @@
    <soap:Body>\r
       <tem:GetLastUpdateDate/>\r
    </soap:Body>\r
-</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ConverterSoap/GetLastUpdateDateRequest"/></con:call></con:operation></con:interface><con:testSuite id="365296fe-d040-4c11-b9c1-c4fc0642cb6e" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="314564fb-ea23-4509-9002-9d0264103970" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Testcase 2" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script" id="70d1332a-144b-4c61-96c9-6762338c129b"><con:settings/><con:config><script><![CDATA[import org.ini4j.Wini
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ConverterSoap/GetLastUpdateDateRequest"/></con:call></con:operation></con:interface><con:testSuite id="365296fe-d040-4c11-b9c1-c4fc0642cb6e" name="ConverterSoap TestSuite 2"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="314564fb-ea23-4509-9002-9d0264103970" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="POC Stap 2" searchProperties="true"><con:settings/><con:testStep type="groovy" name="POC script 2" id="70d1332a-144b-4c61-96c9-6762338c129b"><con:settings/><con:config><script><![CDATA[import org.ini4j.Wini
 
 def slurper = new XmlSlurper()
 def suits = testRunner.testCase.testSuite
@@ -869,8 +869,9 @@ input_step = resultaat
 logFile = new File (logDir+logFile)
 
 logFile.append("\r\n")
+logFile.append("\r\n")
 logFile.append(">>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<\r\n")
-logFile.append("Dit is het tweede gedeelte van de SoapUI log")
+logFile.append("Dit is het tweede gedeelte van de SoapUI log\r\n")
 logFile.append(">>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<\r\n")
 logFile.append("\r\n")
 logFile.append("\r\n")
